@@ -8,3 +8,7 @@ My name is Julia Laurindo, I am 18 years old and I live in Brazil.
 
 ## I already worked with
 
+* JavaScript
+* HTML
+* CSS
+* Frameworks like: BootStrap; React
