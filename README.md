@@ -1,12 +1,12 @@
 # 👋​ Olá, Sejam Bem Vindos!  |  👋​ Hello, Welcome!
 
-My name is Julia Laurindo, I am 18 years old and I live in Brazil. 
+Meu nome é Julia Laurindo, tenho 18 anos e moro em Hortolândia - SP.
 
-​💻 - I am a Software Developer  
-💼​ - I currently work as a Sistems Development Apprentice in Bosch Campinas    
-📕​ - This project is being developed during the back-end study subject in my technical course of Software Development  
+​💻 - Desenvolvedora de Sistemas  
+💼​ - Atualmente trabalho como Aprendiz de Desenvolvimento de Sistemas na Bosch Campinas    
+📕​ - Este projeto está sendo desenvolvido durante as aulas de Programação Back End, do Senai Roberto Mange - Campinas / SP
 
-## I already worked with
+## Já trabalhei com:
 
 * JavaScript
 * HTML
@@ -14,4 +14,8 @@ My name is Julia Laurindo, I am 18 years old and I live in Brazil.
 * C#
 * Frameworks: BootStrap e React
 
+## Hobbies
+<div>
+  <img url="https://i.pinimg.com/736x/a9/58/74/a95874e4707a9eb6e88d1c95a86a527f.jpg">
+</div>
 
