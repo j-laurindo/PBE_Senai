@@ -133,18 +133,21 @@ else:
 
 ## Exercício 12
 
-"""num1 = int(input("Insira o primeiro número: "))
-num2 = int(input("Insira o segundo número: "))
-num3 = int(input("Insira o terceiro número: "))
+"""num1 = int(input("Insira o 1º número: "))
+num2 = int(input("Insira o 2º número: "))
+num3 = int(input("Insira o 3º número: "))"""
 
-if num1 == num2 and num1 == num3 and num2 == num3:
-    print("Ordem dos números: Iguais")
-elif num1 > num2 and num1 > num3 and num2 > num3:
-    print("Ordem dos números: Crescente")
-elif num1 < num2 and num1 < num3 and num2 < num3:
-    print("Ordem dos números: Decrescente")
-else:
-    print("Ordem dos números: Desordenado")"""
+## Exercício 14
+
+"""from datetime import date, datetime
+
+data = input("Insira uma data no formato (dd/mm/aaaa): ")
+
+dataFormatada = datetime.strptime(data, '%d/%m/%Y').date()
+
+print(data)
+print(dataFormatada)
+"""
 
 ## Exercício 13
 
@@ -159,20 +162,9 @@ elif temp >= 10:
 else:
     print("Clima: Frio")"""
 
-## Exercício 14
-
-"""from datetime import date, datetime
-
-data = input("Insira uma data no formato (dd/mm/aaaa): ")
-
-dataFormatada = datetime.strptime(data, '%d/%m/%Y').date()
-
-print(data)
-print(dataFormatada)
-"""
 ## Exercício 15
 
-# Bilioteca RE https://blog.rocketseat.com.br/untitled-2/ https://awari.com.br/funcao-len-python-como-usar-a-funcao-len-para-contar-caracteres-em-python/ 
+# Bilioteca RE https://blog.rocketseat.com.br/untitled-2/ https://awari.com.br/funcao-len-python-como-usar-a-funcao-len-para-contar-caracteres-em-python/
 
 ## Exercício 16
 """import math
@@ -187,14 +179,54 @@ elif radic > 100:
 else:
     raiz = math.sqrt(radic)
     raiz_formatada = "%.2f" % raiz
-    print("A raíz de {radic} é: ",raiz_formatada)"""
+    print(f"A raíz de {radic} é: ",raiz_formatada)"""
 
 ## Exercício 17
-from datetime import date, datetime
+"""from datetime import datetime
 
 data = input("Insira uma data no formato (dd/mm/aaaa): ")
-dataFormatada = datetime.strptime(data, '%d/%m/%Y').date()
-print(data)
-print(dataFormatada)
+dia = int(data[0:2])
+mes = int(data[3:5])
+ano = int(data[6:10])
+
+if mes <= 12 and mes > 0:
+    if ((ano % 4 == 0) and (ano % 100 != 0)) or ((ano % 4 != 0) and (ano % 400 == 0)) or ((ano % 4 == 0) and (ano % 400 == 0)):
+        if mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10 or mes == 12 and dia <= 31:
+            dataFormatada = datetime.strptime(data, '%d/%m/%Y').date()
+            print("Data Válida:", dataFormatada)
+        elif  mes == 4 or mes == 6 or mes == 9 or mes == 11 and dia <= 30:
+            dataFormatada = datetime.strptime(data, '%d/%m/%Y').date()
+            print("Data Válida:", dataFormatada)
+        elif mes == 2 and dia <= 29:
+            dataFormatada = datetime.strptime(data, '%d/%m/%Y').date()
+            print("Data Válida:", dataFormatada)
+        else:
+            print("Data Inválida")
+    elif mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10 or mes == 12 and dia <= 31:
+        dataFormatada = datetime.strptime(data, '%d/%m/%Y').date()
+        print("Data Válida:", dataFormatada)
+    elif mes == 4 or mes == 6 or mes == 9 or mes == 11 and dia <= 30:
+        dataFormatada = datetime.strptime(data, '%d/%m/%Y').date()
+        print("Data Válida:", dataFormatada)
+    elif mes == 2 and dia <= 28:
+        dataFormatada = datetime.strptime(data, '%d/%m/%Y').date()
+        print("Data Válida:", dataFormatada)
+    else:
+        print("Data Inválida")
+else:
+    print("Data Inválida")"""
+
+## Exercício 18
+"""print("--> ANALISADOR DE EXPRESSÕES MATEMÁTICAS! <--\n")
+exp = input("Insira a expressão matemática: ")
+resultado = eval(exp)
+
+print(f"O resultado de {exp} é:",resultado)"""
+
+
+
+
+
+
 
 
