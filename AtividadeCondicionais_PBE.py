@@ -133,6 +133,19 @@ else:
 
 ## Exercício 12
 
+"""num1 = int(input("Insira o primeiro número: "))
+num2 = int(input("Insira o segundo número: "))
+num3 = int(input("Insira o terceiro número: "))
+
+if num1 == num2 and num1 == num3 and num2 == num3:
+    print("Ordem dos números: Iguais")
+elif num1 > num2 and num1 > num3 and num2 > num3:
+    print("Ordem dos números: Crescente")
+elif num1 < num2 and num1 < num3 and num2 < num3:
+    print("Ordem dos números: Decrescente")
+else:
+    print("Ordem dos números: Desordenado")"""
+
 ## Exercício 13
 
 """temp = float(input("Insira a temperatura atual (em Cº): "))
@@ -148,7 +161,7 @@ else:
 
 ## Exercício 14
 
-from datetime import date, datetime
+"""from datetime import date, datetime
 
 data = input("Insira uma data no formato (dd/mm/aaaa): ")
 
@@ -156,12 +169,32 @@ dataFormatada = datetime.strptime(data, '%d/%m/%Y').date()
 
 print(data)
 print(dataFormatada)
-
+"""
 ## Exercício 15
 
+# Bilioteca RE https://blog.rocketseat.com.br/untitled-2/ https://awari.com.br/funcao-len-python-como-usar-a-funcao-len-para-contar-caracteres-em-python/ 
+
 ## Exercício 16
+"""import math
 
+print("--> CALCULADORA DE RAÍZ QUADRADA <--\n")
+radic = float(input("Insira o radicando(número): "))
 
+if radic < 0:
+    print("Não é possível calcular a raiz quadrada de um número negativo")
+elif radic > 100:
+    print("Número muito grande, reduza para um valor abaixo de 100")
+else:
+    raiz = math.sqrt(radic)
+    raiz_formatada = "%.2f" % raiz
+    print("A raíz de {radic} é: ",raiz_formatada)"""
 
+## Exercício 17
+from datetime import date, datetime
+
+data = input("Insira uma data no formato (dd/mm/aaaa): ")
+dataFormatada = datetime.strptime(data, '%d/%m/%Y').date()
+print(data)
+print(dataFormatada)
 
 
