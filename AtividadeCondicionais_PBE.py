@@ -133,9 +133,18 @@ else:
 
 ## Exercício 12
 
-"""num1 = int(input("Insira o 1º número: "))
-num2 = int(input("Insira o 2º número: "))
-num3 = int(input("Insira o 3º número: "))"""
+"""num1 = int(input("Insira o primeiro número: "))
+num2 = int(input("Insira o segundo número: "))
+num3 = int(input("Insira o terceiro número: "))
+
+if num1 == num2 and num1 == num3 and num2 == num3:
+    print("Ordem dos números: Iguais")
+elif num1 > num2 and num1 > num3 and num2 > num3:
+    print("Ordem dos números: Crescente")
+elif num1 < num2 and num1 < num3 and num2 < num3:
+    print("Ordem dos números: Decrescente")
+else:
+    print("Ordem dos números: Desordenados")"""
 
 ## Exercício 14
 
@@ -163,8 +172,28 @@ else:
     print("Clima: Frio")"""
 
 ## Exercício 15
+import re
 
-# Bilioteca RE https://blog.rocketseat.com.br/untitled-2/ https://awari.com.br/funcao-len-python-como-usar-a-funcao-len-para-contar-caracteres-em-python/
+senha = input("Digite a senha: ")
+
+if re.findall('.{8,}', senha):
+    if re.findall('[A-Z]', senha):
+        if re.findall('[a-z]', senha):
+            if re.findall('\d', senha):
+                if re.findall('[@#$%&]', senha):
+                    print("Senha: ",senha)
+                    print("Senha Válida")
+                else:
+                    print("A senha precisa conter pelo menos um caractere especial (@, #, $, %, &)")
+            else:
+                print("A senha precisa conter pelo menos um número")
+        else:
+            print("A senha precisa conter pelo menos uma letra minuscula")
+    else:
+        print("A senha precisa conter pelo menos uma letra maiúscula")
+else:
+    print("A senha precisa conter pelo menos 8 caracteres")
+
 
 ## Exercício 16
 """import math
@@ -223,10 +252,6 @@ resultado = eval(exp)
 
 print(f"O resultado de {exp} é:",resultado)"""
 
-
-
-
-
-
+# DESAFIO
 
 
