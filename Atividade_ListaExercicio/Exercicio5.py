@@ -1,6 +1,6 @@
-print("== TABUADA DO 2 ==")
-contador = 1
-while contador <= 10:
+print("== TABUADA DO 2 ==")         # Título da Tabuada
+contador = 1                        # Declaração de um contador
+while contador <= 10:               # Loop para realizar as expressões de multiplicação
     print(f"2 * {contador} = ",2 * contador)
     contador = contador + 1
 

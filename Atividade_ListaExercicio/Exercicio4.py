@@ -1,11 +1,13 @@
+# Variaveis com os valores de cada jogada
 primeira_jogada = 4
 segunda_jogada = 7
 terceira_jogada = 10
 contador = 0
 
+# Condições de cada jogada
 print("== PRIMEIRA JOGADA ==")
 if primeira_jogada % 2 == 0:
-    print("Você avançou uma casa! :D")
+    print("Você avançou uma casa! :D")      
     contador = contador + 1
 else:
     print("Você recuou uma casa! :(")
